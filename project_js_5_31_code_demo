@@ -1,0 +1,138 @@
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 ~
+$ pwd
+/c/Users/wzs
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 ~
+$ cd D:\git
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ ls
+esgyn_db/  project_js/  README.md
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git add esgyn_db
+warning: LF will be replaced by CRLF in esgyn_db/run.sh.
+The file will have its original line endings in your working directory
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git commit -m 'second commit'
+[master 72c31ad] second commit
+ 3 files changed, 73 insertions(+)
+ create mode 100644 esgyn_db/EsgynDB.py
+ create mode 100644 esgyn_db/README
+ create mode 100644 esgyn_db/run.sh
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git remote add origin https://github.com/fishishappyandfree/project_js.git
+fatal: remote origin already exists.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git push -u origin master
+To https://github.com/fishishappyandfree/project_js.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/fishishappyandfree/project_js.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git push
+To https://github.com/fishishappyandfree/project_js.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/fishishappyandfree/project_js.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git fetch origin
+sdremote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/fishishappyandfree/project_js
+   d052ca1..a06e8e2  master     -> origin/master
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git fetch origin
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git merge origin/master
+Merge made by the 'recursive' strategy.
+ README.md | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.80 KiB | 921.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/fishishappyandfree/project_js.git
+   a06e8e2..b9ed370  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git add read_TDMS_to_mat.m
+warning: LF will be replaced by CRLF in read_TDMS_to_mat.m.
+The file will have its original line endings in your working directory
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git add PPT
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git commit -m 'third commit'
+[master f7de02e] third commit
+ 7 files changed, 25 insertions(+)
+ create mode 100644 "PPT/4.19\351\241\271\347\233\256\346\261\207\346\212\245_\345\237\272\344\272\216\345\244\247\346\225\260\346\215\256\347\232\204\351\253\230\347\253\257\347\262\276\345\257\206\346\234\272\345\272\212\347\232\204\346\226\260\344\270\200\344\273\243\346\231\272\350\203\275\347\273\264\346\212\244\347\263\273\347\273\237.pptx"
+ create mode 100644 "PPT/523\346\261\207\346\212\245.pptx"
+ create mode 100644 PPT/data_flow_chat.jpg
+ create mode 100644 PPT/data_flow_chat.pdf
+ create mode 100644 PPT/data_flow_chat.vsdx
+ create mode 100644 PPT/docker.jpg
+ create mode 100644 read_TDMS_to_mat.m
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 8.05 MiB | 2.88 MiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/fishishappyandfree/project_js.git
+   b9ed370..f7de02e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git add README.md
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git commit -m "change README.md"
+[master 0b609f2] change README.md
+ 1 file changed, 6 insertions(+)
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 515 bytes | 515.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/fishishappyandfree/project_js.git
+   f7de02e..0b609f2  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+wzs@LAPTOP-RE1VS5H2 MINGW64 /d/git (master)
+$
